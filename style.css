@@ -3,12 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
 .navbar{
+    position: sticky;
+    top: 0;               
+    z-index: 999;        
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    
+    background-color: black;
 }
 .navbar .navSection,
 .navbar .searchForm,
@@ -58,6 +70,21 @@
 .navbar .navLogo {
      font-size: 1.25rem;
 }
+.authButton {
+    background-color: #ff9cd5;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.4rem;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.authButton:hover {
+    background-color: white;
+    color: #ff4db4;
+}
 .logoText{
     font-size: 1.75rem;
     color:white;  
@@ -74,14 +101,50 @@
 
 .box{
     border: 1px solid black;
-    box-shadow:5px 5px 7px pink;
-   
+    text-shadow: 2px 5px 7px rgb(255, 147, 212); 
 }
 body{
-    background-color: black;;
+    background-color: black;
+    height: auto;
+    overflow-y: auto;
 }
-/* how to remove purple line */
+.container {
+    overflow: visible;  
+    
+}
 
+.linkSection .linkItem{
+    display: flex;
+    align-items: center;
+    padding: 0.37rem 0.75rem;
+    margin-bottom: 0.25rem;
+    color: white;
+    font-size: 0.98rem;
+    font-size: 20px;
+    gap: 1rem;
+    text-decoration: none;
+    
+}
+.linkSection .linkItem:hover{
+    background-color: pink;
+}
+.linkSection .linkItem i{
+    font-size: 1.4rem;
+
+}
+.linkContainer{
+    scrollbar-width: thin;
+}
+.sectionSeparator{
+    height: 1px;
+    margin: 0.65rem;
+    background-color: grey;
+}
+.sectionTitle{
+    font-size: 1rem;
+    color: rgb(226, 60, 154);
+    margin: 1rem 0.5rem;
+}
 .categoryButton{
     border: none;
     cursor: pointer;
@@ -89,30 +152,43 @@ body{
     font-weight: 500;
     background-color: #fad1ef;  
     padding: 0.4rem 0.75rem;
-    border-radius: 0.5rem;
-    
+    border-radius: 0.5rem; 
+}
+.categoryButton.active{
+    color: rgb(219, 159, 169);
+    background-color: white;
 }
 .contentWrapper{
     padding: 0.1rem;
-    overflow-x: hidden;
     width: 100%;
     display: block;
 }
-.mainLayout{
+.mainLayout {
     display: flex;
+
 }
+
 .catgoryList{
     display: flex;
     gap: 10px;
     padding: 0.75rem 0 0.7rem;
     overflow-x: auto;
 }
-.navbar{
-    position: sticky;
+.categoryButton:hover{
+    background-color: white;
+    color: rgb(219, 159, 169);
 }
+
 .sidebar{
+    width: 280px;
     color: rgb(167, 208, 208);
+    position: sticky;
+    top: 60px; 
+    align-self: flex-start; 
+    height: max-content;
 }
+
+
 .videoList .videoCard .thumbnail{
      width: 100%;
      border-radius: 0.5rem;
@@ -152,7 +228,7 @@ p{
     position: absolute;
     right: 0.65rem;
     bottom: 0.8rem;
-    color: black;
+    color: rgb(201, 21, 144);
     font-size: 0.87rem;
 }
 .thumbnailContainer{
@@ -164,4 +240,25 @@ p{
     padding: 1.25rem 0 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 768px) {
+
+
+    .searchInput {
+        width: 180px;
+    }
+
+    .videoList {
+        grid-template-columns: 1fr;
+    }
+
+
+    .sidebar {
+        display: none;
+    }
+
+
+    .contentWrapper {
+        padding: 0.5rem;
+    }
 }

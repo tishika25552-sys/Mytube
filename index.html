@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Echotube</title>
     <link rel="stylesheet" href="style.css">
-    <link rel ="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon"  href="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/dc635fe2-805c-4fb7-ad6b-7d79e3590998.png">
+
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -16,16 +21,20 @@
                         <i class="fa-solid fa-bars"></i>
                     </button>
                     <a href="#" class="navLogo">
-                        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/dc635fe2-805c-4fb7-ad6b-7d79e3590998.png" height="80px" width="150px" alt="logo" class="logoImage">
-                        
+                        <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/dc635fe2-805c-4fb7-ad6b-7d79e3590998.png"
+                            height="80px" width="150px" alt="logo" class="logoImage">
+
                     </a>
+                    <div class="box">
+                        <h2 class="logoText">Echotube</h2>
+                    </div>
 
                 </div>
                 <div class="navSection navCenter">
                     <form action="#" class="searchForm">
                         <input type="search" placeholder="Search" required class="searchInput">
                         <button class="navButton searchButton">
-                        <i class="fa-solid fa-search"></i>
+                            <i class="fa-solid fa-search"></i>
                         </button>
                     </form>
                     <button class="navButton micButton">
@@ -36,18 +45,92 @@
                     <button class="navButton themeButton">
                         <i class="fa-solid fa-moon"></i>
                     </button>
-                    <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="userimage" class="userImage">
+                    <a href="login.html" class="authButton loginBtn">Login</a>
                 </div>
             </nav>
         </header>
 
 
         <main class="mainLayout">
-            <aside class="sidebar">Sidebar</aside>
+            <aside class="sidebar">
+                <div class="linkContainer">
+                    <div class="linkSection">
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-video"></i> Shorts
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-star"></i> Subscription
+                        </a>
+                    </div>
+                    <div class="sectionSeparator"></div>
+
+                    <div class="linkSection">
+                        <h4 class="sectionTitle">You</h4>
+                        <a href="#" class="linkItem">
+                            <i class="fa-regular fa-user"></i> Your Channel
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-clock-rotate-left"></i> History
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-regular fa-clock"></i> Watch Later
+                        </a>
+                    </div>
+                    <div class="sectionSeparator"></div>
+
+                    <div class="linkSection">
+                        <h4 class="sectionTitle">Explore</h4>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-fire"></i> Trending
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-music"></i> Music
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-gamepad"></i> Gaming
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-basketball"></i> Sports
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-tv"></i> Movies
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-tower-broadcast"></i> Live
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-regular fa-newspaper"></i> News
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-graduation-cap"></i> Courses
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-vest-patches"></i> Fashion & Beauty
+                        </a>
+                        <a href="#" class="linkItem">
+                            <i class="fa-solid fa-podcast"></i> Podcasts
+                        </a>
+                        
+                    </div>
+                    <div class="sectionSeparator"></div>
+                    <div class="linkSection">
+                        <a href="about.html" class="linkItem">
+                            <i class="fa-regular fa-circle-question"></i> About Us
+                        </a>
+                        <a href="feedback.html" class="linkItem">
+                            <i class="fa-solid fa-pen"></i> Feedback Form
+                        </a>
+                    </div>
+
+                </div>
+            </aside>
 
             <div class="contentWrapper">
                 <div class="catgoryList">
-                    <button class="categoryButton">All</button>
+                    <button class="categoryButton active">All</button>
                     <button class="categoryButton">Website</button>
                     <button class="categoryButton">Music</button>
                     <button class="categoryButton">Gaming</button>
@@ -66,186 +149,211 @@
 
                 </div>
 
-                <div class="videoList"> 
+                <div class="videoList">
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://marketplace.canva.com/EAGOXiKLMVA/1/0/1600w/canva-pink-and-white-watercolor-illustration-pattern-desktop-wallpaper-Fu25SPEYnAk.jpg" alt="Thumbnail" class="thumbnail">
+                            <img src="https://marketplace.canva.com/EAGOXiKLMVA/1/0/1600w/canva-pink-and-white-watercolor-illustration-pattern-desktop-wallpaper-Fu25SPEYnAk.jpg"
+                                alt="Thumbnail" class="thumbnail">
                             <p class="duration">10:30</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">3M views 6 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTes8B7EUYx3EZhHbOK8QK-BWc6b8hYBEntA&s" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTes8B7EUYx3EZhHbOK8QK-BWc6b8hYBEntA&s"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">15:30</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">10M views 10 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://wallpapers.com/images/hd/white-and-pink-background-fcakcgkf37iybgji.jpg" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://wallpapers.com/images/hd/white-and-pink-background-fcakcgkf37iybgji.jpg"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">20:03</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">1M views 11 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJT0CENiu__B5Wqo6IiPRolbadYq-A_7bfZQ&s" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJT0CENiu__B5Wqo6IiPRolbadYq-A_7bfZQ&s"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">5:30</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">1M views 1 month ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnImFWlvGcyGOta2RR2EdKW627zV0c8dDVUw&s" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnImFWlvGcyGOta2RR2EdKW627zV0c8dDVUw&s"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">1:37</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">3M views 10 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://i.pinimg.com/736x/98/98/23/9898233b1e85a8bec65854a0404d585d.jpg" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://i.pinimg.com/736x/98/98/23/9898233b1e85a8bec65854a0404d585d.jpg"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">4:10</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">10M views 5 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://i.pinimg.com/736x/c2/e2/3d/c2e23d10fd2edc3d8e15b65761b72259.jpg" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://i.pinimg.com/736x/c2/e2/3d/c2e23d10fd2edc3d8e15b65761b72259.jpg"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">17:40</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">3M views 9 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
                             <img src="https://wallpapercave.com/wp/wp5859898.jpg" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <p class="duration">10:20</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">0.5M views 3 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://img.freepik.com/free-vector/watercolor-autumn-leaves-background_52683-68749.jpg?semt=ais_hybrid&w=740&q=80" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://img.freepik.com/free-vector/watercolor-autumn-leaves-background_52683-68749.jpg?semt=ais_hybrid&w=740&q=80"
+                                class="thumbnail">
+                            <p class="duration">12:20</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">4M views 9 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://img.freepik.com/free-vector/watercolor-abstract-doodle-background_23-2149340639.jpg?semt=ais_incoming&w=740&q=80" alt="Thumbnail" class="thumbnail">
+                            <img src="https://img.freepik.com/free-vector/watercolor-abstract-doodle-background_23-2149340639.jpg?semt=ais_incoming&w=740&q=80"
+                                alt="Thumbnail" class="thumbnail">
                             <p class="duration">10:30</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">1M views 4 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://static.vecteezy.com/system/resources/previews/007/078/802/non_2x/black-horizontal-seamless-pattern-with-city-buildings-black-and-white-background-free-vector.jpg" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://static.vecteezy.com/system/resources/previews/007/078/802/non_2x/black-horizontal-seamless-pattern-with-city-buildings-black-and-white-background-free-vector.jpg"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">20:11</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">13M views 9 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://marketplace.canva.com/EAFXvXIB_YY/1/0/1600w/canva-pink-and-white-cute-clouds-desktop-wallpaper-D0NN5x65Bo8.jpg" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://marketplace.canva.com/EAFXvXIB_YY/1/0/1600w/canva-pink-and-white-cute-clouds-desktop-wallpaper-D0NN5x65Bo8.jpg"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">30:12</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">1M views 7 months ago</p>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="videoCard">
                         <div class="thumbnailContainer">
-                            <img src="https://wallpapers.com/images/featured/black-and-white-aesthetic-pictures-wvlzmoegqdr2ivos.jpg" alt="Thumbnail" class="thumbnail">
-                            <p class="duration">10:30</p>
+                            <img src="https://wallpapers.com/images/featured/black-and-white-aesthetic-pictures-wvlzmoegqdr2ivos.jpg"
+                                alt="Thumbnail" class="thumbnail">
+                            <p class="duration">13:01</p>
                         </div>
                         <div class="videoInfo">
-                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp" alt="channelLogo" class="icon">
+                            <img src="https://cutiedp.com/wp-content/uploads/2025/07/instagram-cute-dp.webp"
+                                alt="channelLogo" class="icon">
                             <div class="videoDetails">
                                 <h2 class="title">Welcome to the Pink Aesthetic World 🌸</h2>
                                 <p class="channelName ">Tishika Arora</p>
-                                <p class="views">3M views   6 months ago</p>
+                                <p class="views">2M views 7 months ago</p>
                             </div>
                         </div>
                     </a>
@@ -254,4 +362,5 @@
         </main>
     </div>
 </body>
+
 </html>

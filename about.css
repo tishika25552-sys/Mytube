@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ffe3f3, #e8ecff);
+    color: #333;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 15px #0000000D
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff63a5;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav .active {
+    color: #ff5e9d;
+}
+
+.about-section {
+    padding: 3rem 2rem;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ff4f9e;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-content img {
+    width: 45%;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.03);
+}
+
+.text-box {
+    width: 55%;
+    background: #ffffffbb;
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    line-height: 170%;
+}
+
+
+.info-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.card {
+    width: 32%;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(255, 127, 180, 0.3);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    margin-top: -7px;
+    box-shadow: 0 12px 30px rgba(255, 120, 180, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 768px) {
+
+    
+    .navbar {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+
+    
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .text-box {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 1.5rem;
+        font-size: 0.95rem;
+        line-height: 160%;
+    }
+
+    
+    .info-cards {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .about-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
