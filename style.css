@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    
+}
+.navbar .navSection,
+.navbar .searchForm,
+.navbar .navLogo{
+    display: flex;
+    align-items: center;
+}
+.navbar .navSection{
+    gap: 1rem;
+}
+.navbar .logoImage{
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+.navbar .userImage{
+    width: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navbar .navButton{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    
+}
+.navbar .navButton:hover{
+    background-color: rgb(243, 198, 206);
+}
+
+.navbar .navButton i{
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 1rem;
+}
+.navbar .navLogo{
+    display: flex;
+    gap: 0.5rem;
+}
+.navbar .navLogo {
+     font-size: 1.25rem;
+}
+.logoText{
+    font-size: 1.75rem;
+    color:white;  
+}
+.searchInput{
+    width:400px;
+    height:30px;
+    border-radius: 30px;
+    padding: 0 1rem;
+}
+.searchInput:hover{
+    background-color: rgb(243, 198, 206);
+}
+
+.box{
+    border: 1px solid black;
+    box-shadow:5px 5px 7px pink;
+   
+}
+body{
+    background-color: black;;
+}
+/* how to remove purple line */
+
+.categoryButton{
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #fad1ef;  
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.5rem;
+    
+}
+.contentWrapper{
+    padding: 0.1rem;
+    overflow-x: hidden;
+    width: 100%;
+    display: block;
+}
+.mainLayout{
+    display: flex;
+}
+.catgoryList{
+    display: flex;
+    gap: 10px;
+    padding: 0.75rem 0 0.7rem;
+    overflow-x: auto;
+}
+.navbar{
+    position: sticky;
+}
+.sidebar{
+    color: rgb(167, 208, 208);
+}
+.videoList .videoCard .thumbnail{
+     width: 100%;
+     border-radius: 0.5rem;
+     aspect-ratio: 16 / 9;
+} 
+.videoCard{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.icon{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+.videoInfo{
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.7rem 0.5rem;
+}
+.title{
+    font-size: 1rem;
+    font-weight: 600; 
+}
+.title:hover{
+    color: rgb(217, 107, 162);
+}
+p{
+    font-size: 0.80rem;
+    color: rgb(168, 143, 148); 
+}
+.channelName{
+    margin: 0.25rem 0 0.15rem;
+}
+.duration{
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.8rem;
+    color: black;
+    font-size: 0.87rem;
+}
+.thumbnailContainer{
+    position: relative;
+}
+.videoList{
+    width: 100%;
+    gap: 2rem;
+    padding: 1.25rem 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
