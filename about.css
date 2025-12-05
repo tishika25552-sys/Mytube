@@ -77,13 +77,13 @@ nav .active {
 }
 
 .about-content img:hover {
-    transform: scale(1.03);
+    transform: scaleX(1.03);
+    transform: scaleY(1.03);
 }
 
 .text-box {
     width: 55%;
     background: #ffffffbb;
-    backdrop-filter: blur(8px);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
